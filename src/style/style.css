@@ -1,0 +1,122 @@
+@font-face {
+  font-family: battleship;
+  src: url(Fun\ Games.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: battleship;
+}
+
+.content{
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.header{
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  padding-bottom: 10%;
+}
+
+.gameMode {
+  font-size: 2rem;
+  display: grid;
+  gap: 25px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.gamefield {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.left-grid, .right-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(10, 1fr);
+  width: 400px;
+  height: 400px;
+  border: 4px black solid;
+}
+
+.cell-p1, .cell-p2 {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
+}
+
+.winnerDisplay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  background-color: white;
+}
+
+.winnerDisplay h1 {
+  font-size: 5rem;
+  margin-top: 15%;
+}
+
+.winnerDisplay p {
+  font-size: 2rem;
+}
+
+.drag-drop {
+  display: grid;
+  grid-template-rows: repeat(5, 40px);
+  justify-content: start;
+  gap: 3px;
+}
+
+.carrier {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  justify-content: start;
+  border: 1px solid black;
+  width: 200px;
+}
+
+.battleship {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  justify-content: start;
+  border: 1px solid black;
+  width: 160px;
+}
+
+.cruiser {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  justify-content: start;
+  border: 1px solid black;
+  width: 120px;
+}
+
+.submarine {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  justify-content: start;
+  border: 1px solid black;
+  width: 120px;
+}
+
+.destroyer {
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+  justify-content: start;
+  border: 1px solid black;
+  width: 80px;
+}
